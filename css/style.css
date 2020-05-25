@@ -1,0 +1,90 @@
+/* mix */
+
+
+header{
+  background-color: #1abc9c;
+}
+
+header .cont{
+  background-color: pink;
+  text-align: center;
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+section #about{
+  background-color:#1abc9c;
+  text-align: center;
+}
+
+
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.cont{
+  margin: 30px auto;
+
+  /*             DEBUG               */
+  max-width:400px;
+  padding-bottom: 100px;
+  background-color: #ba4b63;
+  border:1px solid black;
+}
+
+
+
+/* ...............STELLA........................ */
+
+.ms-star{
+  max-width:400px;
+  min-width:100%;
+  margin:auto: 30px auto;
+}
+
+
+
+.fa, .fas {
+  font-weight: 900;
+}
+
+
+.ms-star i.fa-star {
+  content=""\f005"
+  display: inline-block;
+  width: 8%;
+  font-size: 30px;
+  line-height: 4px;
+  vertical-align: middle;
+}
+
+.ms-star:after, .ms-star:before{
+  content: "";
+  display: inline-block;
+  width: 15%;
+  height: 4px;
+  border-radius: 2px;
+  line-height: 4px;
+  vertical-align: middle;
+  background-color: white;
+}
+
+/* ...............STELLA........................ */
+
+
+
+/* media queries */
+
+/* @media screen and (max-width: 768px) {
+
+
+} */
