@@ -150,6 +150,12 @@ h3 {
 
 /* ...............FORM........................ */
 
+#contact input , #contact textarea {
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  box-shadow: none;
+}
 
 .form-group {
   margin-top: 60px;
