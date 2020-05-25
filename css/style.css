@@ -3,35 +3,71 @@
 
 header{
   background-color: #1abc9c;
+  color: #fff;
 }
 
 header .cont{
-  background-color: pink;
   text-align: center;
 }
 
-section {
-    padding: 60px 0;
+section{
+  padding-top: 60px 0;
+}
+
+.section-jumbo{
+  padding-top: 100px 0;
 }
 
 
-section #about{
+#about{
   background-color:#1abc9c;
   text-align: center;
 }
 
+footer {
+    background-color: #3a546d;
+    color: #fff;
+}
+
+.footer-post{
+  width:100%;
+  padding:40px 0;
+  background-color:#2c3e50;
+  text-align: center;
+}
+
+.footer-pre{
+  padding:40px 0;
+}
+
+.ms_link-green {
+  color: #1ABC9C;
+  text-decoration: none;
+}
+/*.....................FORMATTAZIONE TESTO......................  */
 
 h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 50px;
 }
 
 
+h3 {
+  font-size: 25px;
+  font-weight: 400px;
+}
 
+/*......................DEBUG IMMAGINI......................  */
 
-
-
-.cont{
+.ms-port-img{
   margin: 30px auto;
 
   /*             DEBUG               */
@@ -42,23 +78,48 @@ h1, h2, h3 {
 }
 
 
+/* ...............MARGINI........................ */
 
-/* ...............STELLA........................ */
 
-.ms-star{
-  max-width:400px;
-  min-width:100%;
-  margin:auto: 30px auto;
+[class*="ms-cnt"]{
+  margin:30px 0;
+}
+
+  /*...................... NAVBAR E JUMBO......................  */
+
+.navbar.ms_navbar {
+    margin-bottom: 0;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
+.navbar-default.ms_navbar .navbar-brand,
+.navbar-default.ms_navbar .navbar-nav li a{
+  color: #fff;
 }
 
 
+#jumbotron, #about {
+    color: #fff;
+}
+
+/* ...............FONT AWESOME STELLA........................ */
+
+.ms-star{
+  max-width:300px;
+  min-width:100%;
+}
 
 .fa, .fas {
   font-weight: 900;
 }
 
-
 .ms-star i.fa-star {
+  color: white;
   content=""\f005"
   display: inline-block;
   width: 8%;
@@ -78,7 +139,59 @@ h1, h2, h3 {
   background-color: white;
 }
 
-/* ...............STELLA........................ */
+.ms-star.ms-black i.fa-star {
+  color: black;
+}
+
+.ms-star.ms-black:after, .ms-star.ms-black:before{
+  background-color: black;
+}
+
+
+/* ...............FORM........................ */
+
+
+.form-group {
+  margin-top: 60px;
+}
+
+/* ...............BOTTONI........................ */
+
+.ms_btn-border-white {
+  border: 1px solid #fff;
+  color: white;
+}
+
+#about .btn{
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.btn-group-lg > .btn, .btn-lg{
+  border: 1px solid #fff;
+  background-color: #1abc9c;
+  color: white;
+}
+
+
+
+/* ...............social........................ */
+
+.social > i {
+  display: inline-block;
+  vertical-align: middle;
+  width:40px;
+  height: 40px;
+  padding:10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: white;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
 
 
 
