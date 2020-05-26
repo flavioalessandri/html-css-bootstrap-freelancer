@@ -4,28 +4,24 @@
 header{
   background-color: #1abc9c;
   color: #fff;
+  text-align: center
 }
 
-header .cont{
+/* header .cont{
   text-align: center;
-}
-
-section{
-  padding-top: 60px 0;
-}
-
-.section-jumbo{
-  padding-top: 100px 0;
-}
-
+} */
 
 #about{
   background-color:#1abc9c;
   text-align: center;
 }
 
-footer {
+#portfolio{
+  color:black;
+}
 
+
+footer {
     color: #fff;
 }
 
@@ -70,22 +66,26 @@ h3 {
 
 /*......................DEBUG IMMAGINI......................  */
 
-#portfolio [class*="my_content"]{
-  margin: 30px auto;
 
-  /*             DEBUG               */
-  max-width:400px;
-  padding-bottom: 100px;
-  background-color: #ba4b63;
-  border:1px solid black;
+#jumbotron img{
+  margin-top: 100px;
+  max-width:30%;
 }
 
+.my_pic img{
+  max-width:100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
 
 /* ...............MARGINI........................ */
 
+.wrapper{
+  padding:60px 0;
+}
 
 [class*="my_content"]{
-  margin:30px 0;
+  margin:60px 0;
 }
 
   /*...................... NAVBAR E JUMBO......................  */
@@ -112,18 +112,9 @@ h3 {
 
 /* ...............FONT AWESOME STELLA........................ */
 
-.star{
-  max-width:300px;
-  min-width:100%;
-}
 
-.fa, .fas {
-  font-weight: 900;
-}
-
-.star i.fa-star {
-  color: white;
-  content=""\f005"
+i.fa-star{
+  content=""\f005";
   display: inline-block;
   width: 80px;
   font-size: 30px;
@@ -131,24 +122,25 @@ h3 {
   vertical-align: middle;
 }
 
-.star:after, .star:before{
+
+.my_content >div:after, .my_content >div:before{
   content: "";
   display: inline-block;
-  width: 100px;
+  width: 80px;
   height: 4px;
   border-radius: 2px;
   line-height: 4px;
   vertical-align: middle;
-  background-color: white;
+  background-color: #fff;
 }
 
-.star.black i.fa-star {
-  color: black;
+
+#portfolio .my_content >div:after, #portfolio .my_content >div:before,
+#contact .my_content >div:after, #contact .my_content >div:before{
+    background-color: black;
 }
 
-.star.black:after, .star.black:before{
-  background-color: black;
-}
+
 
 
 /* ...............FORM........................ */
@@ -187,7 +179,7 @@ h3 {
 
 /* ...............social........................ */
 
-.social > i {
+#address i {
   display: inline-block;
   vertical-align: middle;
   width:40px;
@@ -205,20 +197,31 @@ footer h3 {
 
 
 /* ---SM - SMALL DEVICES MEDIA QUERY----  */
-@media all and (min-width: 576px) {
+@media all and (min-width: 576px) and (mAX-width: 767px) {
 
   /* REGOLE DI DEBUG */
   header {
     background-color: orange;
   }
+
+  #jumbotron img{
+    margin-top: 80px;
+    max-width:50%;
+  }
+
 }
 
 /* ---MD - MEDIUM DEVICES MEDIA QUERY----  */
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 991px) {
 
   /* REGOLE DI DEBUG */
   header {
     background-color: lightgreen;
+  }
+
+  #jumbotron img{
+    margin-top: 100px;
+    max-width:50%;
   }
 
 }
@@ -230,15 +233,4 @@ footer h3 {
   header {
     background-color: pink;
   }
-}
-
-/* ---EXTRA LARGE DEVICES MEDIA QUERY----  */
-
-@media all and (min-width: 1200px) {
-
-      /* REGOLE DI DEBUG */
-  header {
-    background-color: yellow;
-  }
-
 }
