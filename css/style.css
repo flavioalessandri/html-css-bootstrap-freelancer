@@ -17,9 +17,12 @@ header , #about{
 
 header{
   padding-top: 150px;
+  padding-left:1%;
+  padding-right:1%;
+  padding-bottom: 0;
 }
 
-section{
+footer section{
   padding: 40px 1%;
 }
 
@@ -152,7 +155,7 @@ i.fa-star{
 }
 /* ............RIMOZIONE LINEE AL MY_CONTENT DEL FOOTER.... */
 footer .my_content >div:after, footer .my_content >div:before{
-  width: 0;
+  display:none;
 }
 /* ................................................SEZIONE FORM............. */
 #contact input , #contact textarea {
@@ -263,15 +266,25 @@ header button:hover, #contact button:hover{
 }
 /* .............................................FOOTER ICONE DEI SOCIAL..... */
 #address i {
-  font-size: 1.8rem;
-  width:50px;
-  height: 50px;
-  padding:16px;
-  margin: 0 1%;
-  border: 3px solid #fff;
+  font-size: 2rem;
+  width:60px;
+  height: 60px;
+  padding:18px;
+  margin-left: 5px;
+  margin-right:5px;
+  border: 2px solid #fff;
   border-radius: 50%;
   color: white;
 }
+
+#address i:first-of-type {
+  margin-left: 0;
+}
+
+#address i:last-of-type {
+  margin-right: 0;
+}
+
 /* ...........................................FOOOTER........................ */
 footer #address{
   background-color: #3a546d;
@@ -292,7 +305,7 @@ footer {
 /* ..........................................MEDIA QUERIES................... */
 
 /* XS Extra small devices (portrait phones, less than 576px ..................*/
-@media all and (max-width: 575.98px) {
+@media all and (max-width: 576px) {
 
 }
 
@@ -316,10 +329,13 @@ footer {
 
   header{
     padding-top: 10rem;
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom: 10rem;
   }
 
-  section{
-    padding: 2rem 10%;
+  footer section{
+    padding: 2rem 3%;
   }
 
   section#portfolio{
@@ -346,7 +362,7 @@ footer {
   }
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   #jumbotron h3 {
@@ -362,7 +378,7 @@ footer {
   }
 
   p {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 3rem;
     margin:10px 0;
   }
@@ -388,6 +404,7 @@ footer {
     max-width:20%;
   }
 
+
 }
 
 /* LG Large devices (large desktops, 1200px and up) ........................ */
@@ -396,20 +413,28 @@ footer {
 
 /* ..........MARGINI GENERALI SEZIONI............... */
 
+
   header{
   padding-top: 15rem;
+  padding-left:13%;
+  padding-right:13%;
+  padding-bottom: 4rem;
   }
 
-  section{
-  padding: 3rem 13%;
+  footer section{
+  padding: 3rem 5%;
   }
 
   section#portfolio{
   padding: 3rem 13%;
   }
 
-  section#about, section#contact{
+  section#about{
   padding: 10rem 13%;
+  }
+
+  section#contact{
+  padding: 10rem 18%;
   }
 
   .navbar.navbar-inverse.navbar-fixed-top{
@@ -423,17 +448,24 @@ footer {
   }
   /* ...grandezza font della NAV "START BOOTSTRAP"..  */
   a.navbar-brand {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .form-control::placeholder {
-    font-size: 2.2rem!important;
+    font-size: 1.9rem!important;
   }
 
   p {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     line-height: 3.5rem;
     margin:10px 0;
+  }
+
+
+
+  .project-overlay {
+    font-size: 5rem;
+    line-height: 2rem;
   }
 
 
